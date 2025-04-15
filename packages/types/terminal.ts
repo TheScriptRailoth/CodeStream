@@ -1,12 +1,3 @@
-/**
- * Types for code execution results and terminal output.
- * Includes:
- * - Execution result interface
- * - Result type enumeration
- * - Output metadata
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
 
 export interface ExecutionResult {
   language: string;

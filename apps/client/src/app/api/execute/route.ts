@@ -1,13 +1,3 @@
-/**
- * API route handler for executing code submissions.
- * Makes requests to Piston API for code execution with:
- * - Input validation
- * - Request cancellation support
- * - Execution metadata
- * - Error handling
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
 
 import { NextResponse } from 'next/server';
 
@@ -81,7 +71,7 @@ export async function POST(request: Request) {
     if (error instanceof DOMException && error.name === 'AbortError') {
       return NextResponse.json(
         { error: 'Code execution cancelled' },
-        { status: 499 }, // Using 499 Client Closed Request
+        { status: 499 }, 
       );
     }
 

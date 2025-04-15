@@ -1,13 +1,4 @@
-/**
- * Code synchronization service for collaborative editing.
- * Features:
- * - Room data management
- * - Code update handling
- * - Language state sync
- * - Real-time broadcast
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
+
 
 import type { Server, Socket } from 'socket.io';
 
@@ -17,7 +8,6 @@ import type { EditOp } from '@codex/types/operation';
 import { getUserRoom } from './room-service';
 import { getCustomId } from './user-service';
 
-// Use a single Map for all room data to reduce memory overhead
 type RoomData = {
   code: string;
   langId: string;
@@ -62,17 +52,12 @@ export const getLang = (roomID: string): string => {
   return roomData.get(roomID)?.langId || DEFAULT_LANG_ID;
 };
 
-/**
- * Set language ID with single operation
- */
+
 export const setLang = (roomID: string, langId: string): void => {
   const data = initializeRoom(roomID);
   data.langId = langId;
 };
 
-/**
- * Optimized code sync
- */
 export const syncCode = (socket: Socket, io: Server): void => {
   const customId = getCustomId(socket.id);
   if (customId) {
@@ -81,9 +66,7 @@ export const syncCode = (socket: Socket, io: Server): void => {
   }
 };
 
-/**
- * Optimized language sync
- */
+
 export const syncLang = (socket: Socket, io: Server): void => {
   const roomID = getUserRoom(socket);
   if (!roomID) return;
@@ -194,19 +177,15 @@ export const updateCode = (socket: Socket, operation: EditOp): void => {
       textLines[textLines.length - 1],
     );
 
-    // Optimize array operations by calculating exact size needed
     const newLinesCount = textLines.length;
     const removedLinesCount = endLineIndex - startLineIndex + 1;
     const sizeChange = newLinesCount - removedLinesCount;
 
-    // Pre-allocate array if growing
     if (sizeChange > 0) {
       lines.length += sizeChange;
     }
 
-    // Efficient array manipulation
     if (newLinesCount === 2) {
-      // Optimize common case of 2-line change
       lines[startLineIndex] = newStartLine;
       lines[startLineIndex + 1] = newEndLine;
       if (removedLinesCount > 2) {

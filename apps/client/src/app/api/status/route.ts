@@ -1,12 +1,4 @@
-/**
- * API route handler for fetching server status from BetterStack.
- * Features:
- * - Uptime monitoring status
- * - Error handling
- * - Status response formatting
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
+
 
 import { NextResponse } from 'next/server';
 

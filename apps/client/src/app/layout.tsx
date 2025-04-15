@@ -1,14 +1,4 @@
-/**
- * Root layout component that wraps all pages.
- * Provides global configuration and providers including:
- * - Fonts (Geist Sans and Mono)
- * - Metadata and SEO settings
- * - Theme provider
- * - Toast notifications
- * - Analytics
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
+
 
 import type { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';

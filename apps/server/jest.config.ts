@@ -1,14 +1,3 @@
-/**
- * Jest test configuration.
- * Features:
- * - TypeScript support
- * - Test environment setup
- * - Reporter configuration
- * - Mock handling
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
-
 import type { Config } from 'jest';
 
 const config: Config = {

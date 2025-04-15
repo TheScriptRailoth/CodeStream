@@ -6,7 +6,6 @@ import { StreamServiceMsg } from '@codex/types/message';
 import * as roomService from './room-service';
 import * as userService from './user-service';
 
-// Notify all other users in the room that this user is ready to stream
 export const onStreamReady = (socket: Socket) => {
   const room = roomService.getUserRoom(socket);
   if (room) {

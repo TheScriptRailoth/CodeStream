@@ -1,13 +1,4 @@
-/**
- * GitHub API route handler for committing code changes.
- * Provides:
- * - GitHub commit creation endpoint
- * - Authentication validation
- * - Base64 content handling
- * - File path management
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
- */
+
 
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
