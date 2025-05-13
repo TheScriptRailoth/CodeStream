@@ -80,7 +80,6 @@ export class UserMap {
     };
   }
 
-  // Get all users as an array of User objects
   getAll(): User[] {
     return Array.from(this.users.entries()).map(([id, data]) => ({
       id,

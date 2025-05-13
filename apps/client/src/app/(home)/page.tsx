@@ -34,10 +34,12 @@ export default async function Page({ searchParams }: PageProps) {
       <div className="dark fixed inset-0 -z-10">
         <AnimatedGridBackground />
       </div>
-      <main
+      {/* <main
         className="dark relative flex min-h-full w-full flex-col overflow-hidden
           min-[1189px]:flex-row"
-      >
+      > */}
+      <main className="dark relative flex min-h-screen w-full items-center justify-center overflow-hidden">
+
         {/* Left Section - Form */}
         <div
           className="my-2 flex min-h-[700px] w-full flex-col justify-center p-4 min-[560px]:p-8
@@ -50,7 +52,7 @@ export default async function Page({ searchParams }: PageProps) {
                   tracking-tight sm:text-5xl"
               >
                 <Image
-                  src="/images/codex-logo.svg"
+                  src="\images\codestream.svg"
                   alt="CodeStream Logo"
                   width={96}
                   height={96}

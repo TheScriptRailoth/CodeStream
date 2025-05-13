@@ -5,8 +5,6 @@
  * - Auto-scroll behavior
  * - Download/clear logs
  * - Welcome message
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
@@ -24,7 +22,7 @@ import {
 } from '@/components/ui/tooltip';
 
 import { Output } from './components/output';
-// import { WelcomeMsg } from './components/welcome-msg';
+import { WelcomeMsg } from './components/welcome-msg';
 import { handleDownloadLogs } from './utils';
 
 interface TerminalProps {
@@ -90,7 +88,7 @@ const Terminal = ({ results, setResults }: TerminalProps) => {
           className="*:border-muted-foreground/40 flex flex-col space-y-2 divide-y
             whitespace-pre-wrap font-mono text-sm *:pt-2"
         >
-          {/* <WelcomeMsg /> */}
+          { <WelcomeMsg /> }
           {results.map((result, index) => (
             <Output key={index} result={result} />
           ))}

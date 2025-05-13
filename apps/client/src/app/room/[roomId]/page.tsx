@@ -301,7 +301,7 @@ export default function Room() {
           className="!h-[calc(100%-54px)]"
           direction="horizontal"
         >
-          {/* <ResizablePanel
+          <ResizablePanel
             className={cn(
               'animate-fade-in-left [&>div]:h-full',
               monaco && editor && 'border-muted-foreground border-t',
@@ -315,7 +315,7 @@ export default function Room() {
             defaultSize={20}
           >
             <MemoizedNotepad markdown={mdContent} />
-          </ResizablePanel> */}
+          </ResizablePanel>
           <ResizableHandle
             aria-label="Resize Handle"
             className={cn(

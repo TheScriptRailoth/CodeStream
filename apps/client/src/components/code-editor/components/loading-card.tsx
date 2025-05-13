@@ -4,8 +4,6 @@
  * - Centered alert with spinner
  * - Blurred backdrop
  * - Description message
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import { memo } from 'react';
