@@ -6,7 +6,6 @@
  * - Image domains
  * - Turbo config
  *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import path from 'path';
