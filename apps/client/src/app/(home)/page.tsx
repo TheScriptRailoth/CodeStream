@@ -3,12 +3,12 @@
 import { Suspense } from 'react';
 import Image from 'next/image';
 
-import { AboutButton } from '@/components/about-button';
+//import { AboutButton } from '@/components/about-button';
 import { AnimatedGridBackground } from '@/components/animated-grid-bg';
-import { LatencyTestButton } from '@/components/latency-test-button';
+//import { LatencyTestButton } from '@/components/latency-test-button';
 import { RoomAccessForm } from '@/components/room-access-form';
-import { ShowcaseGrid } from '@/components/showcase-grid';
-import { Status } from '@/components/status';
+//import { ShowcaseGrid } from '@/components/showcase-grid';
+//import { Status } from '@/components/status';
 
 interface PageProps {
   searchParams: Promise<{
