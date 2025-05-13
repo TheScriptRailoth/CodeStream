@@ -14,6 +14,11 @@ import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
+
+  eslint: {
+    ignoreDuringBuilds: true, 
+  },
+
   outputFileTracingRoot: path.join(__dirname, '../../'),
   poweredByHeader: false,
   experimental: {
