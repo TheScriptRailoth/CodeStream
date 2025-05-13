@@ -5,8 +5,6 @@
  * - Color-coded messages
  * - Execution time display
  * - Error output handling
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import type { ExecutionResult } from '@codex/types/terminal';

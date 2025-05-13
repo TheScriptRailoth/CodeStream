@@ -4,8 +4,6 @@
  * - Sheet trigger button
  * - Editor settings access
  * - Accessible tooltip
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import { useRef } from 'react';

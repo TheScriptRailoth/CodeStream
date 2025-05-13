@@ -35,7 +35,7 @@ export const GITHUB_CLIENT_SECRET = IS_DEV_ENV
 
 export const NAME_MAX_LENGTH = 64;
 
-export const SITE_NAME = 'CodeX - Code Collaboration Platform';
+export const SITE_NAME = 'CodeStream - Your Collaborative Coding Space';
 export const SITE_DESCRIPTION =
   'Your collaborative coding space, reimagined. Code together now on CodeX, no sign-up required.';
 export const INVITED_DESCRIPTION =

@@ -38,7 +38,7 @@ const ExternalLink = ({ forceDark = false }: ExternalLinkProps) => {
           aria-label="Visit portfolio website (opens in new tab)"
         >
           <Image
-            src="/images/codex-logo.svg"
+            src="/images/codestream.svg"
             alt="Mirai logo"
             className="mr-2"
             width={16}
