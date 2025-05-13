@@ -5,8 +5,6 @@
  * - Service initialization
  * - Message handling
  * - CORS configuration
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import type { SignalData } from 'simple-peer';
@@ -38,7 +36,8 @@ import {
   isVercelDeployment,
 } from './cors-config';
 
-const PORT = 3001;
+//const PORT = 3001;
+const PORT = Number(process.env.PORT) || 3001;
 
 const app = App();
 
@@ -87,7 +86,7 @@ app.get('/', (res, req) => {
   res.writeHeader('Content-Type', 'text/plain');
 
   res.end(
-    'Hello from codex-server! Go to https://codex.dulapahv.dev/ to start coding.',
+    'Hello from codestream-server!.',
   );
 });
 
