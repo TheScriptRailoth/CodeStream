@@ -5,8 +5,6 @@
  * - API endpoint URLs
  * - OAuth credentials
  * - App metadata
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 export const IS_DEV_ENV =
@@ -17,9 +15,12 @@ export const IS_DEV_ENV =
 export const BASE_CLIENT_URL = IS_DEV_ENV
   ? 'http://localhost:3000'
   : 'https://codex.dulapahv.dev';
-export const BASE_SERVER_URL = IS_DEV_ENV
-  ? 'http://localhost:3001'
-  : 'https://codex-server.dulapahv.dev';
+// export const BASE_SERVER_URL = IS_DEV_ENV
+//   ? 'http://localhost:3001'
+//    : 'https://codex-server.dulapahv.dev';
+   export const BASE_SERVER_URL = IS_DEV_ENV
+  ? 'https://codestream-server.onrender.com/'
+   : 'https://codex-server.dulapahv.dev';
 
 export const STATUS_URL = 'https://codex-status.dulapahv.dev';
 export const KASCA_SERVER_MONITOR_ID = '2887417';
