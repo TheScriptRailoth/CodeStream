@@ -1,3 +1,10 @@
 packages:
-  - 'apps/*'
-  - 'packages/*'
+  - apps/*
+  - packages/*
+onlyBuiltDependencies:
+  - '@sentry/cli'
+  - bufferutil
+  - sharp
+  - utf-8-validate
+ignoredBuiltDependencies:
+  - es5-ext
