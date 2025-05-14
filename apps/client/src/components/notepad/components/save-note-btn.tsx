@@ -4,8 +4,6 @@
  * - Markdown content export
  * - Timestamped filenames
  * - Blob handling
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 import type { RefObject } from 'react';
