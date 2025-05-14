@@ -52,7 +52,8 @@ export default defineConfig({
       command: process.env.CI
         ? 'cd ../server && pnpm start'
         : 'cd ../server && pnpm dev',
-      url: 'http://localhost:3001',
+      // url: 'http://localhost:3001',
+      url: 'https://codestream-server.onrender.com/',
       reuseExistingServer: !process.env.CI,
       stdout: 'pipe',
       stderr: 'pipe',
