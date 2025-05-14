@@ -4,8 +4,6 @@
  * - Global test setup
  * - Environment configuration
  * - Helper imports
- *
- * By Dulapah Vibulsanti (https://dulapahv.dev)
  */
 
 const LOCAL_SERVER = 'http://localhost:3001';
