@@ -10,7 +10,9 @@
  */
 
 import type { Monaco } from '@monaco-editor/react';
-import themeList from 'monaco-themes/themes/themelist.json';
+// import themeList from 'monaco-themes/themes/themelist.json';
+import themeList from '@/lib/themes/themelist.json';
+
 
 const DEFAULT_THEMES = {
   'vs-dark': {
